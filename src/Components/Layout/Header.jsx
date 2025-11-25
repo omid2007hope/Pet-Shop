@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <>
-      <header className="w-screen bg-white shadow-sm sticky top-0 z-50 border-b">
+      <header className="w-full bg-white shadow-sm sticky top-0 z-50 border-b">
         <div className="flex flex-row items-center justify-between w-full h-full max-w-7xl mx-auto py-3 px-4">
           {/* Logo */}
           <div className="h-full flex items-center">
@@ -49,7 +49,9 @@ function Header() {
         {open && (
           <div className="md:hidden bg-white border-t shadow-sm">
             <div className="flex flex-col text-center py-4 gap-4 font-bold">
-              <a className="hover:text-red-500 cursor-pointer">Home</a>
+              <a href="/" className="hover:text-red-500 cursor-pointer">
+                Home
+              </a>
               <a className="hover:text-red-500 cursor-pointer">Prices</a>
               <a className="hover:text-red-500 cursor-pointer">About</a>
               <a className="hover:text-red-500 cursor-pointer">Contact</a>

@@ -1,12 +1,10 @@
-import Index from "../Components/Home";
+import Hero from "../Components/HomePage/Hero";
 
 function Home() {
   return (
-    <>
-      <main className="min-h-screen bg-grey-50">
-        <Index />
-      </main>
-    </>
+    <main className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <Hero />
+    </main>
   );
 }
 
