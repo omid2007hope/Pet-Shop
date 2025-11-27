@@ -1,7 +1,6 @@
 // src/components/Home/PromoBanner.jsx
 import { Carousel } from "rsuite";
 import "rsuite/dist/rsuite-no-reset.min.css";
-import HeroBanner from "../../assets/Image/HeroBanner.jpg";
 
 export default function WomanPhoto() {
   const Photo = [
@@ -13,9 +12,9 @@ export default function WomanPhoto() {
     <Carousel
       autoplay
       shape="bar"
-      className="w-full h-full overflow-hidden"
+      className="w-full h-full"
       style={{
-        height: 1100,
+        height: 1000,
         background: "#f7f3ef",
       }}
     >
@@ -25,7 +24,7 @@ export default function WomanPhoto() {
             src={item}
             alt="PromoBanner"
             key={id}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover md:object-cover lg:object-cover"
           />
         );
       })}

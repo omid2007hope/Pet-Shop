@@ -1,32 +1,29 @@
 import { Search, MapPin, X } from "lucide-react";
-import HeroBanner from "../../assets/Image/HeroBanner.jpg";
 import PromoBannerSlider from "./PromoBannerSlider";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-screen flex items-center justify-center">
+    <main className="relative w-full h-full flex flex-col items-center justify-center">
       {/* Background Image */}
-
-      <div className="absolute inset-0 w-full h-full object-cover">
+      <div className="w-full h-full flex flex-col justify-center items-center absolute">
         <PromoBannerSlider />
       </div>
 
-      {/* Dark gradient overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
-
       {/* Center Text */}
       <div className="relative flex flex-col items-center text-white text-center space-y-4">
-        <h1 className="text-5xl font-bold">Find the Right Veterinarian</h1>
+        <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold">
+          Find the Right Veterinarian
+        </h1>
 
-        <p className="text-xl max-w-2xl">
+        <p className=" text-1xl  md:text-xl lg:text-xl max-w-2xl">
           Over 5,000 veterinarians and pet service providers in Austria. Book
           appointments online.
         </p>
 
         {/* Search Box */}
-        <div className="mt-6 bg-white w-90 md:w-250 lg:w-250 h-50 md:h-35 lg:h-35 rounded-2xl shadow-xl border border-gray-300 flex flex-col md:flex-row lg:flex-row items-center px-4 space-x-4 justify-around">
+        <div className="mt-6 bg-white w-90 md:w-200 lg:w-250 h-50 md:h-35 lg:h-35 rounded-2xl shadow-xl border border-gray-300 flex flex-col md:flex-row lg:flex-row items-center px-4 space-x-4 justify-around  z-100">
           {/* Left Input */}
-          <div className="flex items-center border border-gray-300 rounded-lg w-full md:w-1/2 lg:w-1/2 h-12 bg-white">
+          <div className="flex justify-center items-center border border-gray-300 rounded-lg w-full md:w-1/2 lg:w-1/2 h-12 bg-white">
             <button className="px-3 text-gray-600">
               <Search />
             </button>
@@ -38,7 +35,7 @@ export default function Hero() {
           </div>
 
           {/* Location Input */}
-          <div className="flex items-center border border-gray-300 rounded-lg w-full md:w-1/2 lg:w-1/3 h-12 bg-white">
+          <div className="flex justify-center items-center border border-gray-300 rounded-lg w-full md:w-1/2 lg:w-1/3 h-12 bg-white">
             <input
               type="text"
               placeholder="Location or ZIP code"
@@ -58,6 +55,6 @@ export default function Hero() {
           </button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

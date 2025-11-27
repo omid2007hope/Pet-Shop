@@ -1,9 +1,11 @@
 import Hero from "../Components/HomePage/Hero";
+import WebsiteTrafficStatistics from "../Components/HomePage/WebsiteTrafficStatistics";
 
 function Home() {
   return (
-    <main className="min-h-screen bg-gray-50 flex items-center justify-center">
+    <main className="relative h-screen flex flex-col items-center justify-center">
       <Hero />
+      <WebsiteTrafficStatistics />
     </main>
   );
 }
